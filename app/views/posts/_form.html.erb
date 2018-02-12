@@ -12,16 +12,29 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+    <div class="row">
+      <div class="col-md-4">
+        <%= f.label :title %>
+      </div>
+      <div class="col-md-8">
+        <%= f.text_field :title %>
+      </div>
+    </div>
   </div>
 
   <div class="field">
-    <%= f.label :body %>
-    <%= f.text_area :body %>
+    <div class="row">
+      <div class="col-md-4">
+        <%= f.label :body %>
+      </div>
+      <div class="col-md-8">
+      <div>
+        <%= f.text_area :body %>
+      </div>
+    </div>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :class => 'btn btn-secondary' %>
   </div>
 <% end %>
