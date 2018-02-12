@@ -9,6 +9,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <%= link_to 'My Blog', root_path, class:'navbar-brand' %>
+        <ul class="my-2 my-lg-0">
+          <li class="navbar-text">
+            <% if user_signed_in? %>
+              <%= link_to 'New Post', new_post_path %>
+            <% else %>
+              <%= link_to 'Admin Login', new_user_session_path %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
