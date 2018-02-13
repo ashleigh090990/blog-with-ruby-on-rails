@@ -2,10 +2,15 @@ Blog Application
 ================
 
 
+To run locally:
+Git clone this repo
+
 To install dependencies:
 bundle install
+
 Db migration:
 rake db:migrate
+
 To run app:
 rails server or rails s
 
@@ -18,7 +23,7 @@ Go to localhost:3000
 rails g devise:install
 
 
-Using Devise for 
+Using Devise for login
 
 
 
