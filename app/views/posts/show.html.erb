@@ -17,3 +17,14 @@
 <div class="pt-2">
 	<%= social_share_button_tag(@post.title)%>
 </div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/enUS/all.js#xfbml=l&appId=504323752911178";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="fb-comments" data-href="<%= request.url %>" data-width="470" data-num-posts="3"></div>
