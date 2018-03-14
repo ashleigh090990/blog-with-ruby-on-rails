@@ -14,8 +14,11 @@
         <%= link_to 'My Blog', root_path, class:'navbar-brand' %>
         <ul class="my-2 my-lg-0">
           <li class="navbar-text">
+
+            <%= user_signed_in? %>
             <% if user_signed_in? %>
               <%= link_to 'New Post', new_post_path %>
+              <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
             <% else %>
               <%= link_to 'Admin Login', new_user_session_path %>
             <% end %>
