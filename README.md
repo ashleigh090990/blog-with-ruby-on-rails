@@ -1,57 +1,20 @@
 Blog Application
 ================
 
+To run this app locally, you'll need to have Ruby and Ruby on Rails installed.
 
-To run locally:
-Git clone this repo
+Clone this repo, install the dependencies and run a database migration:
 
-To install dependencies:
-bundle install
+```
+$ git clone https://github.com/ashleigh090990/blog-with-ruby-on-rails.git
+$ bundle install
+$ rake db:migrate
+```
 
-Db migration:
-rake db:migrate
+To run the app:
 
-To run app:
-rails server or rails s
+```
+$ rails s
+```
 
-Go to localhost:3000
-
-
-
-
-
-rails g devise:install
-
-
-Using Devise for login
-
-
-
-
-
-
-
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Go to localhost:3000 (or where the logs say it's running)
